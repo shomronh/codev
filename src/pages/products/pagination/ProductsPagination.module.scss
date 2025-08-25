@@ -1,0 +1,41 @@
+$font_size: calc(var(--global-description-size) * 0.8);
+$margin: 17px;
+
+.container {
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.prev {
+  margin-right: $margin;
+  cursor: pointer;
+  user-select: none;
+  font-size: $font_size;
+}
+
+.prev::before {
+  content: "\003C";
+  margin-right: 2px;
+}
+
+.current {
+  font-size: $font_size;
+}
+
+.next {
+  margin-left: $margin;
+  cursor: pointer;
+  user-select: none;
+  font-size: $font_size;
+}
+
+.next::after {
+  content: "\003E";
+  margin-left: 2px;
+}
+
+.disabled{
+  color: rgb(189, 189, 189);
+}

@@ -1,0 +1,13 @@
+
+
+
+.container {
+    background-color: white;
+    overflow: hidden;
+    overflow-y: auto;
+    height: calc(100vh - 175px);
+
+    & > li:last-child {
+        margin-bottom: 0;
+    }
+}

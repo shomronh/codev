@@ -1,0 +1,9 @@
+
+
+.header {
+    padding: 10px;
+    padding-left: var(--global-page-margin-left);
+    font-size: 12px;
+    font-weight: bold;
+    background-color: var(--global-blue1-color);
+}

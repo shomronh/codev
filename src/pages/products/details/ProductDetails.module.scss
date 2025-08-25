@@ -1,0 +1,60 @@
+.container {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-top: 40px;
+}
+
+.form {
+  
+  p {
+    margin-bottom: 10px;
+
+    .image {
+      width: 300px;
+      max-height: 200px;
+      object-fit: cover;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
+
+    label {
+      display: block;;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+      direction: rtl;
+    }
+
+    .price_input {
+      display: inline-block;
+      width: 100px;
+    }
+
+    &:nth-child(5) span::after {
+      content: "$";
+      font-size: 0.8em;
+      margin-left: 5px;
+    }
+
+    .save_button {
+      background-color: var(--global-green1-color);
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  }
+
+  .error_message{
+    color: red;
+    font-size: 0.8em;
+    direction: ltr !important;
+  }
+}

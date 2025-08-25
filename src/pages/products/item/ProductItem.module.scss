@@ -1,0 +1,66 @@
+.container {
+  position: relative;
+  display: flex;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.hoverContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  background-color: var(--global-blue1-color);
+  transition: opacity 0.3s ease, width 0.5s ease;
+}
+
+.container:hover .hoverContainer {
+  opacity: 0.3;
+}
+
+.container .hoverContainer_selected {
+  opacity: 0.3;
+}
+
+.image {
+  width: 100px;
+  max-height: 80px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.detailsContainer {
+  flex: 5;
+}
+
+.title {
+  font-size: var(--global-title-size);
+}
+
+.description {
+  font-size: var(--global-description-size);
+}
+
+.buttonContainer {
+  position: relative;
+  flex: 1;
+}
+
+.button {
+  height: 25px;
+  font-size: calc(var(--global-description-size) * 0.7);
+  line-height: 0;
+  padding: 5px 10px;
+  background-color: orange;
+  color: black;
+  border: none;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

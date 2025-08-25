@@ -1,0 +1,25 @@
+
+
+.container{
+    display: flex;
+}
+
+.productsListContainer {
+
+}
+
+.main {
+    flex: 1;
+    margin-left: var(--global-page-margin-left);
+    margin-right: 10px;
+}
+
+
+.aside {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.paginationContainer {
+    
+}
