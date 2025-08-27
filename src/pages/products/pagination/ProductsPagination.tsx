@@ -1,7 +1,7 @@
 
 import { forwardRef, useEffect, useImperativeHandle, useState } from 'react';
 import styles from './ProductsPagination.module.scss'
-import { useAppSelector } from '../../../store/productsSlice';
+// import { useAppSelector } from '../../../store/productsSlice';
 
 export interface ProductsPaginationHandle {
     triggerOnPageIndexChanged: () => void;

@@ -21,19 +21,19 @@ interface ProductsState {
   selectedProduct?: Product;
 }
 
-const generateItems = (): Product[] => {
-  const items: Product[] = [];
-  for (let i = 1; i <= 4; i++) {
-    items.push({
-      id: i,
-      name: `Product ${i}`,
-      description: `Description for Product ${i}`,
-      price: i * 100,
-      creationDate: new Date().getTime()
-    });
-  }
-  return items;
-}
+// const generateItems = (): Product[] => {
+//   const items: Product[] = [];
+//   for (let i = 1; i <= 4; i++) {
+//     items.push({
+//       id: i,
+//       name: `Product ${i}`,
+//       description: `Description for Product ${i}`,
+//       price: i * 100,
+//       creationDate: new Date().getTime()
+//     });
+//   }
+//   return items;
+// }
 
 const getItemsFromLocalStorage = () => {
   const items = localStorage.getItem('products');
